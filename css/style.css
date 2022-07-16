@@ -91,3 +91,66 @@ a {
     }
 }
 
+/* Badges */
+
+.badge {
+    border-radius: 20px;
+    padding: 0.5rem 2rem;
+    font-weight: bold;
+    white-space: nowrap;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.badge--primary {
+    background-color: var(--color-primary);
+    color: #FFF;
+}
+
+.badge--secondary {
+    background-color: var(--color-secondary);
+    color: #FFF;
+}
+
+.badge--small {
+    font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .badge {
+        font-size: 1.5rem;
+    }
+
+    .badge--small {
+        font-size: 1.2rem;
+    }
+}
+
+/* Lists */
+
+.list {
+    list-style: none;
+    padding-left: none;
+    color: var(--color-heading);
+}
+
+.list--inline .list__item {
+    display: inline-block;
+    margin-left: 2rem;
+}
+
+.list--tick {
+    list-style-image: url(../images/tick.svg);
+    margin-left: 3rem;
+}
+
+.list--tick .list__item {
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .list--tick .list__item {
+        padding-left: 0;
+    }
+}
