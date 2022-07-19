@@ -247,3 +247,59 @@ a {
         font-size: 1.5rem;
     }
 }
+
+
+/* Inputs */ 
+
+.input {
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    color: var(--color-heading);
+    font-size: 2rem;
+    outline: 0;
+    padding: 1.5rem 3.5rem;
+}
+
+::placeholder {
+    color: #cdcbd7;
+}
+
+.input-group {
+   border: 1px solid #ccc;
+   padding: 0.5rem 2rem;
+   border-radius: 30px;
+   display: flex;
+}
+
+.input-group .input {
+    border: 0;
+    flex-grow: 1;
+}
+
+@media screen and (min-width: 1024px) {
+   .input {
+    font-size: 1.5rem;
+}
+}
+
+/* Cards */
+
+.card {
+    border-radius: 7px;
+    box-shadow: 0 0 20px 10px #f3f3f3;
+    overflow: hidden;
+}
+
+.card__header, .card__body {
+    padding: 2rem 3rem;
+}
+
+.card--primary .card__header {
+    background-color: var(--color-primary);
+    color: #FFF;
+}
+
+.card--secondary .card__header {
+    background-color: var(--color-secondary);
+    color: #fff;
+}
